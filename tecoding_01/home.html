@@ -1,42 +1,35 @@
-<!-- anchor  다른 정보를 추가해 줘야 한다. -->
-<!-- http:// 프로토콜을 적어 주어야 한다. -->
-<a href="http://www.naver.com">네이버</a>
-tag에 추가 적인 정보를 주는 것을 attribute(속성) 이라고 한다.
+<!-- 파일 경로 확인  -->
 
-
-<!-- 적을 수는 있지만 브라우저는 이해 하지 못 함 -->
-<h1 myNews="first Title">Title</h1>
-<!-- h1 태그에 추가적인 정보 href 를 추가 하더라도 이해 못함 -->
-<h1 href="http://www.naver.com">Title</h1>
-<!-- 올바른 태그를 올바른 위치에 작성해야 한다. -->
-
-
-<!-- 구문을 작성할 때 조심!  -->
-<ahref="http://www.naver.com">네이버</a>
-
-
-<!-- target 개념 설명 -->
-<a href="http://www.naver.com" target="_self">네이버</a>
-<br />
-<a href="http://www.naver.com" target="_blank">네이버</a>
-
-<h1 href="http://www.naver.com" target="_blank">네이버</h1>
-
-<!-- 이미지 태그는 다른 태그와 다르게 닫아 주는 태그가 없다  -->
-<!-- 이런 태그들은  self close tag 라고 한다.   -->
-
-<img />
-<!-- 이유는 태그와 태그 사이에 content 를 표기할 텍스으가 없기 때문이다. -->
-<!-- <img>content</img> -->
-
-<!-- 이미지 자체가 content 이다  -->
 <img
-  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxODA4MzFfOTYg%2FMDAxNTM1NjkzNzMyMjMx.vlBmjrcjxSqvcX05sj-V3jReR6LHN2oozjjJL1tOmBAg.ohHDir6ex2MoQzQZSVaevaMn-YdXu8DxTYis9yajks8g.JPEG.lovenh%2F%25B1%25D7%25B8%25B21.JPG&type=a340"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetVqSqo4uA_e-ROVruOmHHHtgn0qxhWavYg&usqp=CAU"
 />
+<br />
+<img src="logo.png" />
+<br />
 
-<!-- 역시나 h1 태그에서도 사용할 수 없다.   -->
-<h1
-  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxODA4MzFfOTYg%2FMDAxNTM1NjkzNzMyMjMx.vlBmjrcjxSqvcX05sj-V3jReR6LHN2oozjjJL1tOmBAg.ohHDir6ex2MoQzQZSVaevaMn-YdXu8DxTYis9yajks8g.JPEG.lovenh%2F%25B1%25D7%25B8%25B21.JPG&type=a340"
->
-  표기 됨?
-</h1>
+<!-- img 폴더 만들어서 파일 경로 이동 -->
+<img src="img/logo.png" />
+
+<!-- 
+1. 절대경로란?
+
+절대경로란 파일 경로를 찾을 때 직접적인 경로를 그대로 적는 방식을 말하는데
+예를 들어서,
+<img src="http://www.~~~.com/img/logo.png ">
+<img src="c:devnote/img/logo.png">
+
+
+2. 상대경로란
+상대경로란 파일 경로를 찾을 때, 경로를 찾는 파일을 기준으로 찾는 방식인데,
+예를 들어 home.html파일 안에
+<img src="img/logo.png">
+이런 식으로 집어 넣으면 home.html이 있는 폴더에서 같은 레벨의 폴더인
+img폴더에서 아래  logo.png 파일을 찾게된다.
+
+
+상대경로를 지정하는 방식은
+상위 폴더 : ".."
+현재 폴더: "./" or ""(아무 것도 안적는 것)
+하위 폴더: "하위폴더명/"
+
+ -->
