@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
+<!-- 
+    lang 속성은 구글, 네이버 등 검색엔제들에게 도움을 주기 위한 속성이다.
+    kr, en 
+ -->
+<html lang="kr">
 	<!-- 헤더는 페이지에 관한 환경 설정을 해주는 곳이다. -->
 	<head>
 		<title>Home - My Web Site</title>
+		<link
+			rel="shortcut icon"
+			href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+		/>
 		<!-- html 그대로 출력이 된다. 이렇게 하면 잘못 작성한 부분이 된다.  -->
 		asdasdasdasdasd
 		<!-- 
@@ -12,6 +20,18 @@
             head 대그 안에 사용하는 모든 태그들은 보여지지 않는다. 
             즉, 글자를 적으면 보여 지지만 실제 목적에 맞게 head 영역에 동작하는 
             태그들은 안보여 진다. 화면 상에 보여질 내용들은 전뷰 body 태그 안에 있어야 한다.
+
+            메타 태그는 부가적인 정보라는 뜻 이다. 
+            메타 캐그의 속성은 content 와 name 등등 있다. 
+        -->
+
+		<meta name="descroptiopn" content="This is my WebSite" />
+		<meta charset="utf-8" />
+		<!-- 이 부분은 매우 중요한 부분이다. text 를 어떻게 표현해야 하는지 알려 준다. 
+            한글이나 특수문자를 사용할 때 깨져 보이는 부분을 해결해 줄 수 있다.
+            항상 잊지 말고 넣어 주자 !!!  
+
+            즉 지금 하고 있는 헤더 쪽 작업은 브라우저에게 알져주는 용도 이다. 
         -->
 	</head>
 	<body>
