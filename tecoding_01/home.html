@@ -1,35 +1,22 @@
-<!-- 파일 경로 확인  -->
-
-<img
-  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetVqSqo4uA_e-ROVruOmHHHtgn0qxhWavYg&usqp=CAU"
-/>
-<br />
-<img src="logo.png" />
-<br />
-
-<!-- img 폴더 만들어서 파일 경로 이동 -->
-<img src="img/logo.png" />
-
-<!-- 
-1. 절대경로란?
-
-절대경로란 파일 경로를 찾을 때 직접적인 경로를 그대로 적는 방식을 말하는데
-예를 들어서,
-<img src="http://www.~~~.com/img/logo.png ">
-<img src="c:devnote/img/logo.png">
-
-
-2. 상대경로란
-상대경로란 파일 경로를 찾을 때, 경로를 찾는 파일을 기준으로 찾는 방식인데,
-예를 들어 home.html파일 안에
-<img src="img/logo.png">
-이런 식으로 집어 넣으면 home.html이 있는 폴더에서 같은 레벨의 폴더인
-img폴더에서 아래  logo.png 파일을 찾게된다.
-
-
-상대경로를 지정하는 방식은
-상위 폴더 : ".."
-현재 폴더: "./" or ""(아무 것도 안적는 것)
-하위 폴더: "하위폴더명/"
-
- -->
+<!DOCTYPE html>
+<html>
+	<!-- 헤더는 페이지에 관한 환경 설정을 해주는 곳이다. -->
+	<head>
+		<title>Home - My Web Site</title>
+		<!-- html 그대로 출력이 된다. 이렇게 하면 잘못 작성한 부분이 된다.  -->
+		asdasdasdasdasd
+		<!-- 
+            파일을 결합때도 사용한다. -> 자바(import file) 
+            .css 파일  + .js 파일 
+            
+            head 대그 안에 사용하는 모든 태그들은 보여지지 않는다. 
+            즉, 글자를 적으면 보여 지지만 실제 목적에 맞게 head 영역에 동작하는 
+            태그들은 안보여 진다. 화면 상에 보여질 내용들은 전뷰 body 태그 안에 있어야 한다.
+        -->
+	</head>
+	<body>
+		<h1>Hello HTML</h1>
+		<a href="http://google.com" target="_blank">GO GOOGLE</a>
+		<img src="img/logo.png" />
+	</body>
+</html>
