@@ -1,0 +1,4 @@
+학습 목표 
+form tag 
+
+form tag 안에서 가장 많이 사용되는 태그는 input 태그 이다. 
