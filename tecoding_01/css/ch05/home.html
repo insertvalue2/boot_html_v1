@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* div {
+				height: 200px;
+				width: 200px;
+				background-color: tomato;
+			} */
+
+			/* inline 요소를 block 로 block 요소를 inline 요소로 변경할 수 있을끼?  */
+			span {
+				background-color: aqua;
+				font-size: 20px;
+				display: block;
+			}
+			/* 반대로 설정해 보자 . div --> inline */
+			div {
+				height: 200px;
+				width: 200px;
+				background-color: tomato;
+				display: inline;
+			}
+			/*  div가 사라짐 ???  
+                1. 이유는 inline 요소는 기본적으로 높이와 너비를 가질 수 없다. 
+                2. content 가 없다. 
+            */
+		</style>
+	</head>
+	<body>
+		<div>content</div>
+		<span>hello css</span>
+		<span>hello css</span>
+	</body>
+</html>
