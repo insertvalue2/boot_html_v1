@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				background-color: whitesmoke;
+				padding: 20px;
+				margin: 0px;
+			}
+			div {
+				height: 200px;
+				width: 200px;
+				background-color: tomato;
+				/* 2 추가  */
+				padding: 10px;
+			}
+			/*  어떻게 first id만 선택할 수 있을까?  */
+			#first {
+				background-color: aqua;
+				/* 주속후 2번 으로  */
+				/* height: 300px;
+				width: 300px; */
+			}
+			#second {
+				background-color: brown;
+				/* height: 250px;
+				width: 250px; */
+			}
+			#third {
+				background-color: rgb(42, 165, 116);
+				/* height: 200px;
+				width: 200px; */
+			}
+			#fourth {
+				background-color: rgb(86, 174, 218);
+				/* height: 150px;
+				width: 150px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="first">
+			<div id="second">
+				<div id="third">
+					<div id="fourth"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
