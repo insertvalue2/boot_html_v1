@@ -21,6 +21,7 @@ block은 inline 에 차이점은 높이와 너비 말고 더 존재 한다.
 inline box 가 아니다 
 box 라는 말은 margin, padding, border 를 가질 수 있다는 의미가 된다. 
 즉, box는 3가지 속성을 가진다. ! 
+( inline 요소도 margin, padding, border 가질 수 있다. 하지만 높이와 너비는 적용 안됨!!!)
 
 margin 은 border 의 바깥에 있는 공간을 의미 한다. 
 

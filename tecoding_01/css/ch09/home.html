@@ -16,7 +16,15 @@
 
 				/* 실습 1  */
 				display: inline;
+				/* inline 높이와 너비가 없기 때문에 사라짐  */
 				display: inline-block;
+				/* inline-block은 block이 inline속성을 가지게해줌 
+                 inline-block 많은 문제를 발생 시킬 수 있다. 
+                 기본값 때문인데 렌더링 부분을 보게 되면 margin 값을 어디든지 
+                 준적이 없지만 적용이 되어 있다. 
+                 그리고 또 다른 문제는 정해진 형식이 없다. !!  
+                 반응형을 지원하지 못한다 --> flex, grid 
+                 */
 			}
 		</style>
 	</head>
