@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* 전제 border 추가 해보기  */
+			* {
+				border: 12px solid rebeccapurple;
+				border: 5px dashed rebeccapurple;
+			}
+			body {
+				background-color: whitesmoke;
+				padding: 20px;
+				margin: 0px;
+			}
+			div {
+				background-color: tomato;
+				padding: 20px;
+				border: solid 2px black;
+			}
+			#first {
+				background-color: aqua;
+				height: 300px;
+				width: 300px;
+			}
+			#second {
+				background-color: brown;
+				height: 250px;
+				width: 250px;
+			}
+			#third {
+				background-color: rgb(42, 165, 116);
+				height: 200px;
+				width: 200px;
+			}
+			#fourth {
+				background-color: rgb(86, 174, 218);
+				height: 150px;
+				width: 150px;
+			}
+			/* cascading 의미 순차적으로 위에서 아래로 해석된다 */
+			span {
+				border-style: solid;
+				margin: 40px;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="first">
+			<div id="second">
+				<div id="third">
+					<div id="fourth">
+						<span>span 태그</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+		<span>span 태그</span>
+	</body>
+</html>
