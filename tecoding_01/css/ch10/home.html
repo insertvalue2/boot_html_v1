@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*
+        규칙 1 
+        flexbox  자식들을 원하는대로 움직이게 하기 위해서는
+        부모에게만 명시 하면 된다. 
+        즉 부모 엘리먼트를(태그) flex-container로 만들어 주면 된다. 
+         
+        
+         */
+			body {
+				margin: 0px;
+				display: flex;
+				/* display 속성을 flex 로 설정하면 많은 것들을 수정할 수 있다 . */
+				/* justify-content: center;
+				justify-content: flex-end;
+				justify-content: start;
+				justify-content: space-between;
+				justify-content: space-around;
+				justify-content: space-evenly; */
+				/* 얼마나 빈 공간을 줄지 자동으로 계산해 준다. */
+
+				justify-content: space-between;
+			}
+			div {
+				height: 200px;
+				width: 200px;
+				background-color: aquamarine;
+			}
+			#second {
+				background-color: antiquewhite;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div id="second"></div>
+		<div></div>
+	</body>
+</html>

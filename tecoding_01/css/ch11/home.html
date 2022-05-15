@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				height: 100vh;
+				margin: 0px;
+				display: flex;
+				/* flex 기본 방향은 row(수평이다.) */
+				flex-direction: row;
+
+				/* 주축과 교차축이 변경된 값이 적용이 된다. */
+				justify-content: space-between;
+				align-items: center;
+				justify-content: center;
+			}
+			div {
+				height: 200px;
+				width: 200px;
+				background-color: aquamarine;
+			}
+			#second {
+				background-color: antiquewhite;
+			}
+			/* 1 2 3 content 기준으로 div 태그도 부모 컨테이너로 바라볼 수 있다.  */
+			/*실습 2   */
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 200px;
+				width: 200px;
+				font-size: large;
+				color: black;
+				background-color: aquamarine;
+				/* display: flex; */
+			}
+			/*  flex 속성을 사용하고 싶다면 직접적인 부모 속상이 flex로 설정하면 된다. */
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<div id="second">2</div>
+		<div>3</div>
+	</body>
+</html>

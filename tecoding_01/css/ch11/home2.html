@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* flex-wrap 에 대해 알아보기  */
+			body {
+				height: 100vh;
+				margin: 0px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: nowrap;
+				/* 기본값  */
+				/* flex-wrap: nowrap; */
+				/* 크기를 초기값으로만 생각한다. 
+
+                */
+				flex-wrap: wrap;
+				/* 최대한 자기 크기를 지키고 안되면 다음 줄로 넘긴다.   */
+				flex-direction: column;
+				flex-direction: column-reverse;
+
+				/* 거의 사용하지 않음 !  */
+				flex-wrap: wrap-reverse;
+			}
+
+			#second {
+				background-color: antiquewhite;
+			}
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 300px;
+				width: 300px;
+				font-size: large;
+				color: black;
+				background-color: aquamarine;
+				/* display: flex; */
+			}
+			/*  flex 속성을 사용하고 싶다면 직접적인 부모 속상이 flex로 설정하면 된다. */
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<div id="second">2</div>
+		<div>3</div>
+	</body>
+</html>
