@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* 우리가 현재 알고 있느 선택자   
+                태그, 아이디, 클래스 선택자 
+            */
+			div {
+				width: 300px;
+				height: 300px;
+				background-color: aqua;
+			}
+			/* #green {
+			}
+			.green {
+				background-color: teal;
+				height: 100px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				width: 100px;
+			} */
+			/* div들 중에 마지막 div가 다른 배경색을 갖도록 만들어 보자. */
+			div:last-child {
+				background-color: teal;
+			}
+			div:first-child {
+				background-color: tomato;
+			}
+			/* span {
+				background-color: aquamarine;
+			} */
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</body>
+</html>
