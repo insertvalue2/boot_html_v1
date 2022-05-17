@@ -1,5 +1,6 @@
 학습 목표 
 결합자(combinators)에 대해 알아보자 
+
 https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Selectors
 자손 결합자 (div span)
 자식 결합자 ( div > span)
@@ -39,3 +40,8 @@ p ~ span {
 
 
  > 를 사용하면 direct child를 찾고, + 를 사용하면 바로 코드상 밑에 있는 sibling을 찾게된다.
+
+
+Pseudo part two 
+Pseudo selector mdn (검색)
+ https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes

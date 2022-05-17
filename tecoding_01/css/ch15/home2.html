@@ -5,46 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<!-- pseudo part two -->
 		<style>
-			span {
-				background-color: aquamarine;
+			body {
+				height: 100vh;
+				margin: 50px;
 			}
-			span:nth-child(2),
-			span:nth-child(4) {
-				background-color: brown;
+			input:required {
+				border: 1px solid tomato;
 			}
-
-			span:nth-child(even) {
-				background-color: brown;
+			input[type="password"] {
+				background-color: aqua;
 			}
-
-			span:nth-child(odd) {
+			input[placeholder="username"] {
 				background-color: blueviolet;
-			}
-
-			/*  3에 배수로 적용하고 싶다면  */
-			/* span:nth-child(3n) {
-				background-color: black;
-			} */
-			/* 1부터 시작해서 3번째 요소에 적용 시키고 싶다면 */
-			span:nth-child(3n + 1) {
-				background-color: black;
 			}
 		</style>
 	</head>
 	<body>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-
-		<!-- 추가  -->
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
-		<span>hello</span>
+		<div>
+			<form action="">
+				<input type="text" placeholder="username" />
+				<input type="password" placeholder="password" required />
+			</form>
+		</div>
 	</body>
 </html>
