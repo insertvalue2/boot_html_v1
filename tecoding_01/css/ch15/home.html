@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* 6 */
+			body {
+				height: 100vh;
+				margin: 50px;
+			}
+			span {
+				color: tomato;
+				/* 3 */
+				background-color: aqua;
+				/* 4 */
+				/* margin: 0 20px; */
+				/* 5 */
+				padding: 5px;
+				border-radius: 10px;
+				/* 7 */
+				/* text-decoration: underline; */
+			}
+			/* p 태그 안에 color을 변경하고 싶다면! 
+                부모 태그 p 를 쓰고 span 을 선택해보자
+            */
+			/* 1 */
+			p span {
+				color: green;
+			}
+			/* 2 */
+			div p span {
+				color: green;
+				/* 8 */
+				/* text-decoration: none; */
+			}
+			/* 3  : span 태그에 배경색을 지정해 보자. */
+			/* 4 : span 태그에 margin 값을 지정해 보자  */
+			/* 5 : span 태그에 padding 값을 주고 border-radius 값을 줘 보자 */
+			/* 7 : span 태그에 밑줄을 그어보자  */
+			/* 8 :  <span>inside</span>  text-decoration: none; 값 주기 */
+			/* 7, 8  번 방법은 좋은 방법이 아니다.  */
+			/* div 바로 밑에 span 태그만 찾아서  text-decoration: underline; 주는 방법이 있다. */
+			/* 7, 8번은 제거  */
+			/*  이렇게 하면 둘다 선택됨  div 자손인 모든 span 태그에 속성을 주는 것 */
+			/* div span {
+				text-decoration: underline;
+			} */
+			/* 9 : 바로 밑 자식을 선택하는 것  */
+			div > span {
+				text-decoration: underline;
+			}
+			/* 10 :  span 태그 추가 하기  */
+			/* 11 형제 결합자 사용해 보기  */
+			p + address {
+				margin: 0 20px;
+				background-color: antiquewhite;
+			}
+			p ~ address {
+				margin: 0 20px;
+				background-color: antiquewhite;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>hello</span>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+				voluptatem eos nemo corporis ab minima<br /><br />
+				<span>inside</span>
+			</p>
+
+			<span>hello</span>
+			<address>부산시 진구</address>
+			<address>부산시 진구</address>
+		</div>
+	</body>
+</html>
